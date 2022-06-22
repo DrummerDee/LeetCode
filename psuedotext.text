@@ -15,3 +15,29 @@ const twoSum = (nums, target) => {
 
 
 this problem will return the numbers but not the index
+
+
+var twoSum = function(nums, target) {
+    let hash = {};
+    for (let i=0; i<nums.length; i++) {
+        if(hash[nums[i]] === undefined) {
+            hash[target-nums[i]] = i;
+        }else{
+            return [hash[nums[i]],i]
+        }
+    }
+}
+
+
+let arr = ['{', '(', '[', '[', ')', '}']
+
+// check to see if open and close together (a match)
+
+let newArr = []
+for (let i = 0 ; i < arr.length ; i ++){
+    if ( arr[i] == '(' || arr[i] == '{' || arr[i] == '['  ) { // newArr = [{, (, [, ]
+        newArr.push(arr[i])
+    }else (arr[i] == ')' || arr[i] == '}' || arr[i] == ')')
+        if (arr[i] == ')')
+    
+}
