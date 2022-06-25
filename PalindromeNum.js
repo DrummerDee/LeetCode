@@ -1,4 +1,5 @@
-/** Find the number that is a palindrome ex: 123 44 */
+/** P(number) R(boolean) E(121 == 121) */
+
  const isPalindrome = (x) => {
     let backwards = Number(x.toString().split('').reverse().join('')) 
     if(x < 0) {
